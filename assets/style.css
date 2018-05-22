@@ -3,6 +3,7 @@
 }
 
 body {
+    background: url("../images/background/wall4.png");
     font-family: Arial, Helvetica, sans-serif;
     overflow: auto;
     color: #777777;
@@ -67,6 +68,40 @@ footer {
     padding: 40px;
     margin-top: 30px;
 }
+
+label {
+    font-size: 18px;
+    display:block;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    margin: 10px 0 25px 0;
+    border: 2px solid #cccccc;
+    padding: 15px;
+    font-size: 18px;
+}
+
+textarea {
+    height: 300px;
+    width: 100%;
+    display: block;
+    margin: 10px 0 25px 0;
+    border: 2px solid #cccccc;
+    padding: 15px;
+    font-size: 18px;
+}
+
+form button {
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    border: 1px solid #cccccc;
+}
+
 .wrapper {
     width: 960px;
     margin: 0 auto;
@@ -78,6 +113,29 @@ footer {
     width: 275x;
     margin: 0 15px 15px 0;
     border: 1px solid #777777;
+}
+
+.portfolio-item {
+    position: relative;
+    background-color:   rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    width: 45%;
+    height: 300px;
+    width: 280px;
+    float: left;
+    border: 1px solid #cccccc;
+}
+
+.portfolio-item h4 {
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
 }
 
 .clearfix {
@@ -98,4 +156,52 @@ footer {
     padding: 15px 0;
     margin-bottom: 20px;
     border-bottom: 2px solid #cccccc;
+}
+
+
+#photo1 {
+    background: url('../images/bigben.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo2 {
+    background: url('../images/columns.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+#photo3 {
+    background: url('../images/madridsun.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo4 {
+    background: url('../images/PortDover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo6 {
+    background: url('../images/vaticantop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#photo7 {
+    background: url('../images/workboots.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo8 {
+    background: url('../images/PeggysCove.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#photo9 {
+    background: url('../images/Aquarium.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
