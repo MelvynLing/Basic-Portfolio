@@ -38,19 +38,32 @@ nav {
 }
 
 nav ul li {
-    display: inline;
+    float: right;
 }
 
 nav ul li a {
     color: #666666;
-    font-size: 18px;
+    font-size: 16px;
     padding: 5px 15px;
-    border-right: 0.5px solid #dddddd;
+    border-left: 0.5px solid #dddddd;
 }
 
 nav ul li:last-child a {
-    border-right: none;
-    padding-right: none;
+    border-left: none;
+    padding-left: none;
+}
+
+nav a:hover {
+    background: #4aaaa5;
+    color: #dddddd;
+    transition-duration: .5s;
+    transition-property: all;
+    -moz-transition-timing-function: ease-in-out;
+}
+
+nav a:visted {
+    color: maroon;
+    text-decoration: wavy;
 }
 
 p {
@@ -141,6 +154,7 @@ form button {
 .clearfix {
     display: block;
     clear: both;
+    padding-top: 120px;
 }
 
 #left-column {
