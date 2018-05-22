@@ -3,7 +3,6 @@
 }
 
 body {
-    background-image: url("./images/concrete_seamless.png");
     font-family: Arial, Helvetica, sans-serif;
     overflow: auto;
     color: #777777;
@@ -60,6 +59,14 @@ p {
     color: #777777;
 }
 
+footer {
+    background: #666666;
+    border-top: 7px solid #4aaaa5;
+    color: #cccccc;
+    text-align: center;
+    padding: 40px;
+    margin-top: 30px;
+}
 .wrapper {
     width: 960px;
     margin: 0 auto;
@@ -92,4 +99,3 @@ p {
     margin-bottom: 20px;
     border-bottom: 2px solid #cccccc;
 }
-
