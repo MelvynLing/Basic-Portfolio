@@ -3,7 +3,7 @@
 }
 
 body {
-
+    background-image: url("./images/concrete_seamless.png");
     font-family: Arial, Helvetica, sans-serif;
     overflow: auto;
     color: #777777;
@@ -45,7 +45,7 @@ nav ul li a {
     color: #666666;
     font-size: 18px;
     padding: 5px 15px;
-    border-right: 5px solid #dddddd;
+    border-right: 0.5px solid #dddddd;
 }
 
 nav ul li:last-child a {
