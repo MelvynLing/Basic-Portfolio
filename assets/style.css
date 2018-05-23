@@ -1,7 +1,13 @@
+/* this calls for all elements using this CSS to follow box-sizing: border box. 
+What this means is that all elements include the padding and border in it's 
+total width and height  */
 *{
     box-sizing: border-box
 }
 
+/* this calls for the body element to style. this element here styles the main
+ body background, provides the default text and color, and overflow:auto -- which
+  allows us to scroll to see more content instead of clipping it short */
 body {
     background: url("../images/background/wall4.png");
     font-family: Arial, Helvetica, sans-serif;
@@ -9,18 +15,26 @@ body {
     color: #777777;
 }
 
+/*this styles all heading elements the same font, color, and weight (boldness)*/
 h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #4aaaa5;
     font-weight: bold;
 }
 
+/*this provides the background to the top header where the h1 element and nav element
+ are located. its currently styled white and has a bottom grey border with and 
+ margin of 30px to space the content away from the header*/
 header {
     background: white;
     border-bottom: 2px solid #cccccc;
     margin-bottom: 30px;
 }
 
+/*This styles the main h1 element that has the name located within. it styles the 
+background teal and fot white. It gives is a size and padding of 30px. it also has
+ the display: inline-block, which allows the nav bar to show beside it, instead of 
+ below the header.*/
 header h1 {
     background: #4aaaa5;
     color: white;
@@ -29,18 +43,28 @@ header h1 {
     font-size: 30px;
 }
 
+/*this one styles the nav element located in the header. this is where the links
+ to the other pages are located. It has a width of 250px, a top margin of 35px to 
+ give it some buffer. its also floated right so it stays on the right side of the 
+ page and the text is aligned that way as well */
 nav {
-    width: 300px;
+    width: 250px;
     float: right;
-    margin-top: 35px;
-    text-align: center;
- 
+    margin-top: 37px;
+    text-align: right;
 }
 
+/*this calls for all list elements in unordered lists, in the nave element to float 
+right. I originally tried to have this as a display element, but kept gettings a 
+white space beside the links. I found float to work much more effectively for 
+this style*/
 nav ul li {
     float: right;
 }
 
+/*this styles all a elements within list elements, located in unordered list 
+elements, in a nav element. It also styles the dividing line between links. 
+setting the width and the color of it*/
 nav ul li a {
     color: #666666;
     font-size: 16px;
@@ -48,24 +72,35 @@ nav ul li a {
     border-left: 0.5px solid #dddddd;
 }
 
+/*this is a psuedoclass. it adds an exception. In this case it adds an exception 
+to the last child (last in squence) to have no border and not padding. this is 
+done so the grey dividing line doesnt show up*/
 nav ul li:last-child a {
     border-left: none;
     padding-left: none;
 }
 
+/*this styles the a elements in the nav element as well. it is also a psuedo 
+class. in this case, it a class for when the mouse hovers over the nav links. 
+This controls their style when hovered*/
 nav a:hover {
     background: #4aaaa5;
-    color: #dddddd;
+    color: #ffffff;
     transition-duration: .5s;
     transition-property: all;
     -moz-transition-timing-function: ease-in-out;
 }
 
+/*this styles the a elements in the nav element as well. it is also a psuedo 
+class. in this case it calls for the links to change color once they've been 
+visited*/
 nav a:visted {
     color: maroon;
     text-decoration: wavy;
 }
 
+/*this styles all p elements, controlling their colour, size, line-height 
+and even margin from the bottom of the container*/
 p {
     font-size: 16px;
     line-height: 22px;
@@ -73,6 +108,8 @@ p {
     color: #777777;
 }
 
+/*this styles the footer, providing the color for the background and text, 
+padding and margin as well. it also styles the teal border on the footer.*/
 footer {
     background: #666666;
     border-top: 7px solid #4aaaa5;
@@ -82,20 +119,29 @@ footer {
     margin-top: 30px;
 }
 
+/*this styles the label element for the form on the contact page. it displays 
+them as a block so they appear vertically.*/
 label {
-    font-size: 18px;
+    font-size: 16px;
     display:block;
 }
 
+/*this one styles the form input boxes, declaring the width of them, how they 
+are displayed, the margins, the border, padding, and font size*/
 form input {
     width: 100%;
     display: block;
     margin: 10px 0 25px 0;
     border: 2px solid #cccccc;
     padding: 15px;
-    font-size: 18px;
+    color: #666666;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/*this styles the text area element for the message in the contact window. it 
+declars the height, width of the area, how its displayed, the margins, padding 
+and borders, and fonts */
 textarea {
     height: 300px;
     width: 100%;
@@ -103,9 +149,13 @@ textarea {
     margin: 10px 0 25px 0;
     border: 2px solid #cccccc;
     padding: 15px;
-    font-size: 18px;
+    color: #666666;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/*this styles the form button on the contact page, with Send Message as the 
+contents. sets the background, text details, etc*/
 form button {
     background: #4aaaa5;
     color: #ffffff;
@@ -113,13 +163,20 @@ form button {
     margin: 10px 0;
     font-size: 20px;
     border: 1px solid #cccccc;
+    float: right;
 }
 
+/* this styles the wrapper class. its a class because its used to set the 
+margins for a number of elements. it is 960px wide, meaning the content must 
+move within this wrapper.*/
 .wrapper {
     width: 960px;
     margin: 0 auto;
 }
 
+/*this styles the image element in the container. You can ser the borders 
+here and margins to give it space, as well as style the borders of it. The 
+image has been floated the left of the text here*/
 .inline-img {
     float: left;
     height: 350px;
@@ -128,17 +185,23 @@ form button {
     border: 1px solid #777777;
 }
 
+/*this styles the portfolio-item class. it sets the height and width as 
+well as sets its borders. It also is position relative to its parent container 
+and floats left.*/
 .portfolio-item {
     position: relative;
-    background-color:   rgba(0, 0, 0, 0.5);
+    background-color: #777777;
     margin: 10px;
-    width: 45%;
     height: 300px;
     width: 280px;
     float: left;
     border: 1px solid #cccccc;
 }
 
+/*t this style the h4 headers that run across the portfolio-item class (images). 
+you can control the color, text color, positioning, and border styling. it is 
+positioned absolute to its portfolio-item class and sit 20px from bottom of this 
+class.*/
 .portfolio-item h4 {
     background: #4aaaa5;
     color: #ffffff;
@@ -151,13 +214,19 @@ form button {
     border-bottom: 1px solid #cccccc;
 }
 
+/* this here clears all the floats and also renders display back to block for styling the 
+footer. the padding is also there for styling the space between the end of the content on 
+the page and the footer*/
 .clearfix {
     display: block;
     clear: both;
     padding-top: 120px;
 }
 
-#left-column {
+/* this styles the id tag container. this was created so that we could put the contents 
+of the index, contact, and portfolio within this, it has a set width, which dictates the 
+width of the content on the page*/
+#container {
     background: white;
     padding: 25px;
     border: 2px solid #cccccc;
@@ -165,55 +234,73 @@ form button {
     float: left;
 }
 
-#left-column h2 {
+/*this styles all h2 elements within the container id. this one in particular styles the 
+title heading for each page.*/
+#container h2 {
     font-size: 24px;
     padding: 15px 0;
     margin-bottom: 20px;
     border-bottom: 2px solid #cccccc;
 }
 
-
+/*the styles photo1 id. it is set so the background image selected takes up the 
+entire div that it is in and doesnt repeat at all*/
 #photo1 {
     background: url('../images/bigben.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+/*the styles photo2 id. it is set so the background image selected takes up the 
+entire div that it is in and doesnt repeat at all*/
 #photo2 {
     background: url('../images/columns.jpg');
     background-size: cover;
     background-repeat: no-repeat;    
 }
 
+/*the styles photo3 id. it is set so the background image selected takes up the 
+entire div that it is in and doesnt repeat at all*/
 #photo3 {
     background: url('../images/madridsun.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+/*the styles photo4 id. it is set so the background image selected takes up the 
+entire div that it is in and doesnt repeat at all*/
 #photo4 {
     background: url('../images/PortDover.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+/*the styles photo6 id. it is set so the background image selected takes up the 
+entire div that it is in and doesnt repeat at all*/
 #photo6 {
     background: url('../images/vaticantop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/*the styles photo7 id. it is set so the background image selected takes up the 
+entire div that it is in and doesnt repeat at all*/
 #photo7 {
     background: url('../images/workboots.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+/*the styles photo8 id. it is set so the background image selected takes up the 
+entire div that it is in and doesnt repeat at all*/
 #photo8 {
     background: url('../images/PeggysCove.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+/*the styles photo9 id. it is set so the background image selected takes up the 
+entire div that it is in and doesnt repeat at all*/
 #photo9 {
     background: url('../images/Aquarium.jpg');
     background-size: cover;
