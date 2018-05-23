@@ -18,7 +18,7 @@ body {
 /*this styles all heading elements the same font, color, and weight (boldness)*/
 h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: orangered;
+    color: #4aaaa5;
     font-weight: bold;
 }
 
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
  are located. its currently styled white and has a bottom grey border with and 
  margin of 30px to space the content away from the header*/
 header {
-    background: #777777;
+    background: #ffffff;
     border-bottom: 2px solid #cccccc;
     margin-bottom: 30px;
 }
@@ -36,7 +36,7 @@ background teal and fot white. It gives is a size and padding of 30px. it also h
  the display: inline-block, which allows the nav bar to show beside it, instead of 
  below the header.*/
 header h1 {
-    background: orangered;
+    background: #4aaaa5;
     color: white;
     display: inline-block;
     padding: 30px;
@@ -66,7 +66,7 @@ nav ul li {
 elements, in a nav element. It also styles the dividing line between links. 
 setting the width and the color of it*/
 nav ul li a {
-    color: #dddddd;
+    color: #666666;
     font-size: 16px;
     padding: 5px 15px;
     border-left: 0.5px solid #dddddd;
@@ -112,7 +112,7 @@ p {
 padding and margin as well. it also styles the teal border on the footer.*/
 footer {
     background: #666666;
-    border-top: 7px solid orangered;
+    border-top: 7px solid #4aaaa5;
     color: #cccccc;
     text-align: center;
     padding: 40px;
@@ -157,7 +157,7 @@ textarea {
 /*this styles the form button on the contact page, with Send Message as the 
 contents. sets the background, text details, etc*/
 form button {
-    background: orangered;
+    background: #4aaaa5;
     color: #ffffff;
     padding: 10px 20px;
     margin: 10px 0;
