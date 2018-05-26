@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-        <!--this is the head element, this is where all the CDNs are link to pull from them the styles needed. 
-        the title bar is also located here-->
     <head>
         <!-- this is the css reset link to reset all browsers to the same -->
             <link rel="stylesheet" type="text/css" href="./assets/reset.css"/>
@@ -10,25 +8,12 @@
         <!-- this line is for the title of the browser -->
             <title>Melvyn Ling - Index</title>    
     </head>
-    <!--this is the body element, all other elements and classes are held within it.-->
     <body>
-            <!--this is the header, this is where the h1 and nav are located-->
         <header>
-            <!--this is a section element with a class of wrapper to set the margins 
-            of the wrapper appropriately. all content will go within this wrapper, as 
-            it is a class and applies to all the elements below.-->
             <section class="wrapper">
-                <!--this h1 element puts the name in the header on the top left side 
-                of the page surrounded in teal-->
              <h1>Melvyn Ling</h1>
-             <!--this nav element holds the links at the top right of the page, leading 
-            to you the contact, portfolio, and index pages-->
                  <nav>
-                    <!--this is an unordered list, used to list the nav links. I originally 
-                    tried just using an a element and floating each beside eachother, but 
-                    after consulting with a friend found this to be way buggy. -->
                      <ul>
-                         <!--these a elements are within an unorder list, easiest for formatting-->
                       <li><a href="index.html">About</a></li> 
                       <li><a href="portfolio.html">Portfolio</a></li> 
                       <li><a href="contact.html">Contact</a></li>   
@@ -36,38 +21,48 @@
                  </nav>
             </section>
             </header>
-            <!--this is a section with the class of wrapper. also set up to keep all content 
-            with in it. as seen here, the wrapper transcends other elements and positions all 
-            content within the wrappers width-->
             <section class="wrapper">
-                        <!--this container holds all the content within the main sections of the page. 
-                        it places it within a white box with a grey thin border-->
-                        <section id="container">
-                            <!--This header sets out the name of the page. Its styling is universal across 
-                            all the pages involved in this portfolio-->
+                        <section id="boxleft">
                             <h2>
                                 About Me
                             </h2>
-                            <!--the img element belows generates the about_me.png file located in the images file 
-                            on this file. this image is used to show a picture of myself for the about me page-->
                             <img src="./images/about_me.png" alt-"Picture of Melvyn Ling" class="inline-img"/>
-                            <!--These p elements are used as for the about me text. its currently fill with some placeholder text - simpsons ipsum-->
-                                <p>I'll keep it short and sweet — Family. Religion. Friendship. These are the three demons you must slay if you wish to succeed in business. Fat Tony is a cancer on this fair city! He is the cancer and I am the…uh…what cures cancer?</p>
-                                <p>When will I learn? The answers to life's problems aren't at the bottom of a bottle, they're on TV! Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. Brace yourselves gentlemen. According to the gas chromatograph, the secret ingredient is… Love!? Who's been screwing with this thing?</p>
-                                <p>How could you?! Haven't you learned anything from that guy who gives those sermons at church? Captain Whatshisname? We live in a society of laws! Why do you think I took you to all those Police Academy movies? For fun? Well, I didn't hear anybody laughing, did you? Except at that guy who made sound effects. Makes sound effects and laughs. Where was I? Oh yeah! Stay out of my booze. Can't you people take the law into your own hands? I mean, we can't be policing the entire city!</p>
-                                <p>I've done everything the Bible says — even the stuff that contradicts the other stuff! Thank you, steal again. Son, a woman is like a beer. They smell good, they look good, you'd step over your own mother just to get one! But you can't stop at one. You wanna drink another woman!</p>
-                                <p>Uh, no, you got the wrong number. This is 9-1…2. Facts are meaningless. You could use facts to prove anything that's even remotely true! Oh, everything looks bad if you remember it. Marge, just about everything's a sin. Y'ever sat down and read this thing? Technically we're not supposed to go to the bathroom.</p>                         
+                                <p>I'll keep it short and sweet — Family. Religion. Friendship. These are the 
+                                    three demons you must slay if you wish to succeed in business. Fat Tony is 
+                                    a cancer on this fair city! He is the cancer and I am the…uh…what cures cancer?</p>
+                                <p>When will I learn? The answers to life's problems aren't at the bottom of a bottle, 
+                                    they're on TV! Lisa, vampires are make-believe, like elves, gremlins, and Eskimos. 
+                                    Brace yourselves gentlemen. According to the gas chromatograph, the secret ingredient 
+                                    is… Love!? Who's been screwing with this thing?</p>
+                                <p>How could you?! Haven't you learned anything from that guy who gives those sermons 
+                                    at church? Captain Whatshisname? We live in a society of laws! Why do you think I 
+                                    took you to all those Police Academy movies? For fun? Well, I didn't hear anybody 
+                                    laughing, did you? Except at that guy who made sound effects. Makes sound effects and 
+                                    laughs. Where was I? Oh yeah! Stay out of my booze. Can't you people take the law into 
+                                    your own hands? I mean, we can't be policing the entire city!</p>
+                                <p>I've done everything the Bible says — even the stuff that contradicts the other stuff! 
+                                    Thank you, steal again. Son, a woman is like a beer. They smell good, they look good, 
+                                    you'd step over your own mother just to get one! But you can't stop at one. You wanna 
+                                    drink another woman!</p>
+                                <p>Uh, no, you got the wrong number. This is 9-1…2. Facts are meaningless. You could use 
+                                    facts to prove anything that's even remotely true! Oh, everything looks bad if you 
+                                    remember it. Marge, just about everything's a sin. Y'ever sat down and read this thing? 
+                                    Technically we're not supposed to go to the bathroom.</p>                         
                             </section>
+                        <aside id="boxright">
+                                <h3>Connect Via:</h3>
+                                <ul>
+                                    <li><a href="#" target="_blank"> <img src="./images/icons/Github.png" alt="GitHub"/></a></li>
+                                    <li><a href="#" target="_blank"> <img src="./images/icons/LinkedIn.png" alt="LinkedIn"/></a></li>
+                                    <li><a href="#" target="_blank"> <img src="./images/icons/Slack.png" alt="Slack"/></a></li>
+                                    <li><a href="#" target="_blank"> <img src="./images/icons/Stackoverflow.png" alt="StackOverflow"/></a></li>
+                                    <li><a href="#" target="_blank"> <img src="./images/icons/Twitter.png" alt="Twitter"/></a></li>
+                                </ul>
+                        </aside>
             </section>
-            <!--this div hold a clearfix class. its the only place i've used it, so i guess it could 
-                have been an id, however, i wasn't sure if i would only be using it more than once-->
-            <div class="clearfix"></div>
-            <!--this is the footer element. it rests at the bottom of the page with its 
-            border above it. it uses the clearfix class above it to clear all the floats 
-            above it and position properly-->
-             <footer>
-                 <!-- this text shows up in the footer, the &copy; is used for the copy right sign-->
-     &copy; 2018 Copyright
-             </footer>
-    </body>
-    </html>
+                <div class="clearfix"></div>
+                 <footer>
+         &copy; 2018 Copyright
+                 </footer>
+        </body>
+        </html>

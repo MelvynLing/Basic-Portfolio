@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-        <!--this is the head element, this is where all the CDNs are link to pull from them the styles needed. 
-        the title bar is also located here-->
     <head>
         <!-- this is the css reset link to reset all browsers to the same -->
             <link rel="stylesheet" type="text/css" href="./assets/reset.css"/>
@@ -10,25 +8,12 @@
         <!-- this line is for the title of the browser -->
             <title>Melvyn Ling - Index</title>    
     </head>
-    <!--this is the body element, all other elements and classes are held within it.-->
     <body>
-            <!--this is the header, this is where the h1 and nav are located-->
         <header>
-            <!--this is a section element with a class of wrapper to set the margins 
-            of the wrapper appropriately. all content will go within this wrapper, as 
-            it is a class and applies to all the elements below.-->
             <section class="wrapper">
-                <!--this h1 element puts the name in the header on the top left side 
-                of the page surrounded in teal-->
              <h1>Melvyn Ling</h1>
-             <!--this nav element holds the links at the top right of the page, leading 
-            to you the contact, portfolio, and index pages-->
                  <nav>
-                    <!--this is an unordered list, used to list the nav links. I originally 
-                    tried just using an a element and floating each beside eachother, but 
-                    after consulting with a friend found this to be way buggy. -->
                      <ul>
-                         <!--these a elements are within an unorder list, easiest for formatting-->
                       <li><a href="index.html">About</a></li> 
                       <li><a href="portfolio.html">Portfolio</a></li> 
                       <li><a href="contact.html">Contact</a></li>   
@@ -36,21 +21,11 @@
                  </nav>
             </section>
             </header>
-            <!--this is a section with the class of wrapper. also set up to keep all content 
-            with in it. as seen here, the wrapper transcends other elements and positions all 
-            content within the wrappers width-->
             <section class="wrapper">
-                        <!--this container holds all the content within the main sections of the page. 
-                        it places it within a white box with a grey thin border-->
-                        <section id="container">
-                            <!--This header sets out the name of the page. Its styling is universal across 
-                            all the pages involved in this portfolio-->
+                        <section id="boxleft">
                             <h2>
                                     My Portfolio
                                </h2>
-                                    <!--the divs below hold the portfolio items (the photos in this case) housed in the container. 
-                                    Their class sets their dimensions and a bit of style, while the ID pull their specific photo 
-                                    from the image file. -->
                                <div class="portfolio-item" id="photo1">
                                    <h4>Big Ben</h4>
                                </div>
@@ -63,7 +38,6 @@
                                <div class="portfolio-item" id="photo4">
                                    <h4>Port Dover</h4>
                                </div>
-           
                                <div class="portfolio-item" id="photo6">
                                    <h4>Vatican Top</h4>
                                </div>
@@ -77,16 +51,20 @@
                                    <h4>Aquarium</h4>
                                </div>
                             </section>
-                 </section>
-             <!--this div hold a clearfix class. its the only place i've used it, so i guess it could 
-                have been an id, however, i wasn't sure if i would only be using it more than once-->
-            <div class="clearfix"></div>
-            <!--this is the footer element. it rests at the bottom of the page with its 
-            border above it. it uses the clearfix class above it to clear all the floats 
-            above it and position properly-->
-             <footer>
-                 <!-- this text shows up in the footer, the &copy; is used for the copy right sign-->
-     &copy; 2018 Copyright
-             </footer>
-    </body>
-    </html>
+                            <aside id="boxright">
+                                    <h3>Connect Via:</h3>
+                                    <ul>
+                                        <li><a href="#" target="_blank"> <img src="./images/icons/Github.png" alt="GitHub"/></a></li>
+                                        <li><a href="#" target="_blank"> <img src="./images/icons/LinkedIn.png" alt="LinkedIn"/></a></li>
+                                        <li><a href="#" target="_blank"> <img src="./images/icons/Slack.png" alt="Slack"/></a></li>
+                                        <li><a href="#" target="_blank"> <img src="./images/icons/Stackoverflow.png" alt="StackOverflow"/></a></li>
+                                        <li><a href="#" target="_blank"> <img src="./images/icons/Twitter.png" alt="Twitter"/></a></li>
+                                    </ul>
+                            </aside>
+                </section>
+                    <div class="clearfix"></div>
+                     <footer>
+             &copy; 2018 Copyright
+                     </footer>
+            </body>
+            </html>
