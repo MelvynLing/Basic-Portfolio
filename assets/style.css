@@ -50,7 +50,7 @@ nav ul li a {
 
 nav ul li:last-child a {
     border-left: none;
-    padding-left: none;
+    /*! padding-left: none; */
 }
 
 nav a:hover {
@@ -158,7 +158,6 @@ form button {
 .clearfix {
     display: block;
     clear: both;
-    padding-top: 120px;
 }
 
 #boxleft, #boxright {
@@ -250,3 +249,167 @@ form button {
     background-repeat: no-repeat;
 }
 
+/*Media Queries*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 0px) and (max-device-width : 600px) {
+
+    header {
+        border: none;
+    }
+    
+    .wrapper {
+        background: url("../images/background/wall4.png");
+        width: 100%;
+    }
+
+    header h1 {
+        width: 100%;
+        background: #4aaaa5;
+        font-size: 35px;
+        text-align: Center;
+        border-bottom: 3px solid #cccccc;
+        margin: none;
+    }
+    
+    nav {
+        width: 100%;
+        float: none;
+    }
+
+    nav ul li {
+        float: none;
+        margin: 15px 0;
+        background-color: #4aaaa5;
+    }
+    
+    nav ul li a {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 20px;
+        border: 3px solid #cccccc;
+    }
+    
+   nav ul li:last-child a {
+        border: 3px solid #cccccc;
+        } 
+    
+        
+    nav a:hover {
+        background: white;
+        color: #666666;
+        font-weight: bold;
+        transition-duration: .5s;
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        }
+
+    nav a:visted {
+        color: maroon;
+        text-decoration: wavy;
+    }
+
+
+    .portfolio-item {
+        position: relative;
+        background-color: #777777;
+        width: 97%;
+        height: 400px;
+        float: none;
+        border: 1px solid #cccccc;
+    }
+    
+    .inline-img {
+        float: left;
+        height: auto;
+        width: 50%;
+        margin: 0 0 0 15;
+        border: 2px solid #777777;
+    }
+    
+    #boxleft, #boxright {
+        background: white;
+        padding: 25px;
+        margin-bottom: 30px;
+        border: 3px solid #cccccc;
+        width: 100%;
+        float: none;
+        display: inline-block;
+        }
+}
+
+/* tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width :601px) and (max-device-width : 960px) {
+ 
+    nav {
+        width: 100%;
+    }
+    
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a {
+        float: left;
+        text-align: center;
+        background-color: #4aaaa5;
+        width: 31%;
+        padding: 20px;
+        display: inline-block;
+        color: #ffffff;
+        font-size: 20px;
+        border: solid #cccccc; 
+        margin-bottom: 30px;
+        margin-left: 8px;
+    }
+    
+nav a:hover {
+    background: #666666;
+    font-weight: bold;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+nav a:visted {
+    color: maroon;
+    text-decoration: wavy;
+}
+
+    
+   nav ul li:last-child a {
+        border: 3px solid #cccccc;
+        } 
+    
+    .wrapper {
+        width: 75%;
+    }
+   
+    .portfolio-item {
+        position: relative;
+        background-color: #777777;
+        width: 97%;
+        height: 400px;
+        float: none;
+        border: 1px solid #cccccc;
+    }
+    
+    .inline-img {
+        float: left;
+        height: auto;
+        width: 40%;
+        margin: 0 0 0 15;
+        border: 2px solid #777777;
+    }
+    
+    #boxleft, #boxright {
+        background: white;
+        padding: 25px;
+        margin-bottom: 30px;
+        width: 100%;
+        border: 3px solid #cccccc;
+        display: inline-block;
+        }
+    }
