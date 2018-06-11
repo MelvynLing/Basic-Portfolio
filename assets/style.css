@@ -190,7 +190,8 @@ form button {
     float: left;
     border: 1px solid #cccccc;
 }
-.portfolio-item h4 {
+
+.portfolio-item a{
     background: #4aaaa5;
     color: #ffffff;
     text-align: center;
@@ -202,7 +203,7 @@ form button {
     border-bottom: 1px solid #cccccc;
 }
 
-h4 {
+section div a {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffffff;
     font-weight: bold;
