@@ -210,31 +210,31 @@ section div a {
 }
 
 #photo1 {
-    background: url('../images/bigben.jpg');
+    background: url('../images/ontariomap.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #photo2 {
-    background: url('../images/columns.jpg');
+    background: url('../images/crystals.png');
     background-size: cover;
     background-repeat: no-repeat;    
 }
 
 #photo3 {
-    background: url('../images/madridsun.jpg');
+    background: url('../images/trophy.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #photo4 {
-    background: url('../images/PortDover.jpg');
+    background: url('../images/giphy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #photo6 {
-    background: url('../images/vaticantop.jpg');
+    background: url('../images/train.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
